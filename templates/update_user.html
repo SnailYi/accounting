@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <h1>输入框页面</h1>
+</header>
+<main>
+    {% block content %}
+    <form method="post" action="/update_user">
+        <label>
+            <span>名字：</span>
+            <input name="name" type="text" value="{{ user.name }}">
+        </label>
+        <label>
+            <span>电话：</span>
+            <input name="phone" type="tel" value="{{ user.phone }}">
+        </label>
+        <label>
+            <span>地址：</span>
+            <input name="address" type="text" value="{{ user.address }}">
+        </label>
+        <label>
+            <span>备注：</span>
+            <input name="remark" type="text" value="{{ user.remark }}">
+        </label>
+        <input type="submit" name="submit" value="修改">
+    </form>
+    {% endblock %}
+</main>
+</body>
+</html>

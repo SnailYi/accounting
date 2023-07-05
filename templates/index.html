@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+***
+显示创建用户是否成功{{ isTrue }}
+***
+显示所有用户信息
+<ul>
+    {% for user in users %}
+    <li>{{ user.name }} -- {{ user.phone }} -- {{ user.address }}</li>
+    {% endfor %}
+</ul>
+***
+是否更新用户消息成功
+{{ update_user_bool }}
+</body>
+</html>

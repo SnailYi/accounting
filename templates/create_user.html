@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试一下</title>
+</head>
+<body>
+<ul>
+    {% for user in users %} {# 迭代 user 变量 #}
+    <li>{{ user.name }}</li>    {# 展示user的名字 #}
+    {% endfor %} {# 使用 endfor 标签结束 for 语句 #}
+</ul>
+<!--<form method="post">-->
+<!--    Name <input type="text" name="name" autocomplete="off" required>-->
+<!--    Phone <input type="text" name="phone" autocomplete="off" required>-->
+<!--    Address <input type="text" name="address" autocomplete="off" required>-->
+<!--    Remark <input type="text" name="remark" autocomplete="off" required>-->
+<!--    <input class="btn" type="submit" name="submit" value="Add">-->
+<!--</form>-->
+</body>
+</html>
